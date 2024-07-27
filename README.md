@@ -1,7 +1,7 @@
 # Line Bird
 
 ### Project Description
-```
+
 The project utilizes GLUT, the OpenGL Utility Toolkit, which provides a window system-independent framework for developing OpenGL applications. 
 OpenGL itself is a versatile, cross-platform API used for rendering 2D and 3D vector graphics.
 
@@ -15,7 +15,6 @@ Developed in C++, the game features various graphical enhancements to increase v
 clouds, grass, flowers, and a dynamic day-night cycle. This case study explores how simpler motion techniques and modifications contribute 
 to creating an engaging and visually appealing game environment. The game supports single-player mode and is controlled via keyboard inputs.
 
-```
 
 
 ### Objectives
@@ -53,38 +52,38 @@ unit, to achieve hardware-accelerated rendering. OpenGL libraries and various GL
 commands were used in this project. These are as follows :
 
 ```
- glColor: Set the current color.
- glBegin and glEnd: Delimit the vertices of a primitive or a group of like primitives.
- glVertex: These functions specify a vertex.
- glReadPixels: Reads a block of pixels from the framebuffer.
- glRasterPos: Specify the raster position for pixel operations.
- glutBitmapCharacter: renders a bitmap character using OpenGL
- glClear(): Clears buffers to preset values.
- glFlush(): Forces execution of OpenGL functions in finite time.
- glMatrixMode: Specifies which matrix is the current matrix.
- glLoadIdentity: Replaces the current matrix with the identity matrix.
- gluOrtho2D: Defines a 2-D orthographic projection matrix.
+-> glColor: Set the current color.
+-> glBegin and glEnd: Delimit the vertices of a primitive or a group of like primitives.
+-> glVertex: These functions specify a vertex.
+-> glReadPixels: Reads a block of pixels from the framebuffer.
+-> glRasterPos: Specify the raster position for pixel operations.
+-> glutBitmapCharacter: renders a bitmap character using OpenGL
+-> glClear(): Clears buffers to preset values.
+-> glFlush(): Forces execution of OpenGL functions in finite time.
+-> glMatrixMode: Specifies which matrix is the current matrix.
+-> glLoadIdentity: Replaces the current matrix with the identity matrix.
+-> gluOrtho2D: Defines a 2-D orthographic projection matrix.
 ```
 GLUT provides high-level utilities to simplify OpenGL programming, especially in
 interacting with the Operating System (such as creating a window, handling key and mouse
 inputs). The following GLUT functions were used in the project:
 
 ```
- glutBitmapCharacter: renders a bitmap character using OpenGL
- glutInit: Initializes GLUT, must be called before other GL/GLUT functions. It takes
+-> glutBitmapCharacter: renders a bitmap character using OpenGL
+-> glutInit: Initializes GLUT, must be called before other GL/GLUT functions. It takes
 the same arguments as the main().
- glutInitWindowSize: Specifies the initial window width and height, in pixels.
- glutInitWindowPosition: Positions the top-left corner of the initial window at (x, y).
- glutCreateWindow: Creates a window with the given title.
- glutDisplayFunc: Registers the callback function for handling window-paint event.
+-> glutInitWindowSize: Specifies the initial window width and height, in pixels.
+-> glutInitWindowPosition: Positions the top-left corner of the initial window at (x, y).
+-> glutCreateWindow: Creates a window with the given title.
+-> glutDisplayFunc: Registers the callback function for handling window-paint event.
 The OpenGL graphic system calls back this handler when it receives a window re-
 paint request.
- glutMainLoop: Enters the infinite event-processing loop, i.e, put the OpenGL
+-> glutMainLoop: Enters the infinite event-processing loop, i.e, put the OpenGL
 graphics system to wait for events, and trigger respective event handlers.
- glutTimerFunc: Registers a timer callback to be triggered in a specified number of
+-> glutTimerFunc: Registers a timer callback to be triggered in a specified number of
 milliseconds.
- glutReshapeWindow: Requests a change to the size of the current window.
- glutCreateMenu: Creates a new pop-up menu.
+-> glutReshapeWindow: Requests a change to the size of the current window.
+-> glutCreateMenu: Creates a new pop-up menu.
 ```
 Various other GLUT functions like glutAddMenuEntry, glutAttachMenu, glutReshapeFunc,
 glutSpecialFunc, etc. are also used in the project code.
