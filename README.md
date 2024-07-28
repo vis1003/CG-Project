@@ -16,6 +16,10 @@ clouds, grass, flowers, and a dynamic day-night cycle. This case study explores 
 to creating an engaging and visually appealing game environment. The game supports single-player mode and is controlled via keyboard inputs.
 
 
+### Compile command (in developer prompt)
+```
+cl /Zi /EHsc /Fe: flappy.exe FLappy_Bird.cpp
+```
 
 ### Objectives
 ```
